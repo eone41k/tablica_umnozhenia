@@ -106,7 +106,7 @@ def send_question(user_id):
 
 @bot.message_handler(func=lambda message: message.text =='стоп')
 def stop_training(msg):
-    bot.send_message(msg.from_user.id, 'треннеровка приостановлена')
+    bot.send_message(msg.from_user.id, 'треннеровка остановлена')
     start(msg)
 
 
